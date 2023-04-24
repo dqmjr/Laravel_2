@@ -2,6 +2,8 @@
 
 @foreach($posts as $post)
     <div>
-        <p>{{ $post->user }}</p>
+        <h1>{{ $post->title }}</h1>
+        <p>{{ $post->text}}</p>
+        <p>Created by: {{ $post->user['name'] }}</p>
     </div>
 @endforeach
